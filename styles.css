@@ -18,6 +18,8 @@ body {
     align-items: center; /* Center contents horizontally within the container */
 	width: 100%;
     max-width: 800px; /* Limit the width for better readability */
+	flex-grow: 1; /* Allow the container to grow and take up available space */
+}
 }
 
 header {
