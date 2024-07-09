@@ -4,17 +4,30 @@ body {
     padding: 0;
     background-color: #f0f8ff;
     color: #333;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center contents vertically within the container */
+    align-items: center; /* Center contents horizontally within the container */
 }
 
 header {
     background-color: #ff69b4;
     color: white;
     padding: 20px;
-    text-align: center;
+    width: 100%;
 }
 
 main {
     padding: 20px;
+    width: 100%;
 }
 
 h2 {
@@ -27,6 +40,8 @@ h2 {
 
 .photos {
     display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children elements horizontally */
     gap: 10px;
 }
 
@@ -36,8 +51,24 @@ h2 {
     border: 5px solid #ff69b4;
 }
 
+.centered-gif {
+    /* Optional: You can specify the width of the GIF */
+    width: 200px;
+    height: auto;
+}
+
 .about, .links {
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin: 5px 0;
 }
 
 a {
@@ -52,9 +83,6 @@ a:hover {
 footer {
     background-color: #ff69b4;
     color: white;
-    text-align: center;
     padding: 10px 0;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 }
